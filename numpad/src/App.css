@@ -1,0 +1,44 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.main {
+  display: block;
+  justify-content: center;
+  position: relative;
+  top: 30vh;
+}
+
+.numbers {
+  display: table;
+  display: flex;
+  justify-content: center;
+}
+.numbers > * {
+  width: 15vw;
+  height: 10vw;
+  border: 2px solid gray;
+  margin: 4px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 3vw;
+}
+.number {
+  /* display: block; */
+  position: relative;
+  box-shadow: 2px 2px 2px gray;
+}
+.number:active {
+  background-color: gray;
+  transition-duration: 0.1s;
+}
+.number:focus {
+  background-color: green;
+}
+.char {
+  position: absolute;
+  bottom: 0px;
+  left: 4vw;
+  display: flex;
+  justify-content: center;
+}
