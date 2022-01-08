@@ -1,14 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 
 const App = () => {
+
+  const [count, setCount] = useState(0);
+
+
   return (
     <div className="App">
       <div className="main">
         <div className="numbers">
           <div className="number">
-            <span style={{ margin: "" }}>1</span>
-            <span className="char" onClick="count">
+            <span>1</span>
+            <span className="char" onClick={()=> setCount(count+1)}>
               . , !
             </span>
           </div>
