@@ -1,18 +1,29 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './App.css'
 
 const App = () => {
 
   const [count, setCount] = useState(0);
+  // useEffect( ()=>{
+    
+  // },[count])
+  // {
+  //   const button = document.querySelector('number');
+  //   const text = document.querySelector('text');
 
+  //   button.addEventListener('click', event => {
+  //   text.textContent = `Click count: ${event.detail}`;
+  // });
+  // }
 
   return (
     <div className="App">
+      <div className='text'></div>
       <div className="main">
         <div className="numbers">
-          <div className="number">
+          <div className="number" onClick={()=> {setCount(count+1)}}>
             <span>1</span>
-            <span className="char" onClick={()=> setCount(count+1)}>
+            <span className="char" >
               . , !
             </span>
           </div>
